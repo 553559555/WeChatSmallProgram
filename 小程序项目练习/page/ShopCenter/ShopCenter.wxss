@@ -1,0 +1,97 @@
+.container {
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+}
+
+.topButtonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.topButtonView {
+  height: 100rpx;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topButtonText {
+  font-size: 30rpx;
+}
+
+.loginContainerView {
+  margin: 50rpx 20rpx 0rpx 20rpx;
+  background-color: white;
+}
+
+.loginDescribeTextStyle {
+  font-size: 30rpx;
+  margin: 10rpx 10rpx 10rpx 10rpx;
+}
+
+.inputViewContainerStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputContainerViewStyle {
+  border: 1px solid #bbb;
+  border-radius: 10rpx;
+  height: 70rpx;
+  width: 85vw;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.inputView {
+  height: 70rpx;
+  font-size: 30rpx;
+  margin-left: 5vw;
+  width: 50vw;
+}
+.inputTextDescrice {
+  border-right: 1px solid #bbb;
+  width: 25vw;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 30rpx;
+}
+.getCodeInputStyle{
+  height: 70rpx;
+  font-size: 30rpx;
+  width: 50vw;
+  text-align: center;
+}
+.getCodeStyle{
+  border-left: 1px solid #bbb;
+  width: 35vw;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 30rpx;
+}
+.radioContainerStyle{
+  margin-top: 30rpx;
+}
+.loginButtonContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40rpx;
+}
+.loginButtonStyle{
+  border-radius: 10rpx;
+  height: 80rpx;
+  width: 85vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+}

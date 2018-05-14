@@ -1,0 +1,11 @@
+<template name='item1'>
+  <view class='itemContainer'>
+    <image class='itemImageStyle'></image>
+    <view class='textContainerViewStyle'>
+      <text class='shopTitleStyle'>我是一个商家标题</text>
+      <text class='shopPriceStyle'>100元</text>
+      <text class='shopDescStyle'>汽车，美容，保养</text>
+      <text class='shopDiscountStyle'>满减10元</text>
+    </view>
+  </view>
+</template>

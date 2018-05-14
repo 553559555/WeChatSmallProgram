@@ -1,0 +1,49 @@
+<view class='container'>
+  <view class='topButtonContainer'>
+    <view id='1' class='topButtonView' style='background-color:{{isShopType?"blue":"#ddd"}}' bindtap='loginTypeButtonClick'>
+      <text class='topButtonText' style='color:{{isShopType?"white":"grey"}}'>门店登录</text>
+    </view>
+    <view id='2' class='topButtonView' style='background-color:{{isShopType?"#ddd":"blue"}}' bindtap='loginTypeButtonClick'>
+      <text class='topButtonText' style='color:{{isShopType?"grey":"white"}}'>机构登录</text>
+    </view>
+  </view>
+  <view class='loginContainerView'>
+    <text class='loginDescribeTextStyle'>手机号为开通商户时提供的手机号</text>
+    <view class='inputViewContainerStyle'>
+      <view class='inputContainerViewStyle'>
+        <text class='inputTextDescrice'>手机号</text>
+        <input class='inputView' placeholder='请输入手机号码'></input>
+      </view>
+      <view class='inputContainerViewStyle' hidden='{{userLoginType}}'>
+        <text class='inputTextDescrice'>密　码</text>
+        <input class='inputView' placeholder='请输入密码'></input>
+      </view>
+      <view class='inputContainerViewStyle' hidden='{{!userLoginType}}'>
+        <input class='getCodeInputStyle' placeholder='请输入验证码'></input>
+        <text class='getCodeStyle' bindtap='getCode'>获取验证码</text>
+      </view>
+    </view>
+    <view class='radioContainerStyle'>
+      <radio-group bindchange='loginType'>
+        <label style='font-size:30rpx;margin-left:50rpx;' wx:for='{{userLoginStyleArray}}' wx:key='{{index}}'>
+          <radio value='{{item.name}}' checked='{{item.checked}}' />{{item.name}}
+        </label>
+      </radio-group>
+    </view>
+    <view class='radioContainerStyle' hidden='{{isShopType}}'>
+      <radio-group>
+        <label style='font-size:30rpx;margin-left:50rpx;' wx:for='{{shopLoginStyleArray}}' wx:key='{{index}}'>
+          <radio value='{{item.name}}' checked='{{item.checked}}' />{{item.name}}
+        </label>
+      </radio-group>
+    </view>
+    <view class='loginButtonContainer'>
+      <view class='loginButtonStyle' style='background-color:blue;'>
+        <text style='font-size:30rpx;color:white;'>登录</text>
+      </view>
+      <view class='loginButtonStyle' style='background-color:grey;'>
+        <text style='font-size:30rpx;'>在线申请</text>
+      </view>
+    </view>
+  </view>
+</view>

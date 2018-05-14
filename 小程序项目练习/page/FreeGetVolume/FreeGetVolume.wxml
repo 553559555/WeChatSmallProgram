@@ -1,0 +1,61 @@
+<import src='Item/item.wxml' />
+<view class='container'>
+  <!-- 搜索视图 -->
+  <view class='searchView'>
+    <view class='searchContainerView' bindtap='searchViewClick'>
+      <image  class='searchImageStyle' src='../../images/search.png'></image>
+      <text class='searchTextStyle'>商家名称</text>
+    </view>
+  </view>
+  <!-- banner -->
+  <view class='bannerStyle'>
+   <swiper class='bannerStyle' indicator-dots='true' autoplay='true' interval='5000' duration='500' circular='true'>
+    <view wx:for="{{imageData}}" wx:key='{{index}}'>
+      <swiper-item>
+        <image src='{{item}}' class='bannerStyle'></image>
+      </swiper-item>
+    </view>
+   </swiper>
+  </view>
+  <!-- 分类 -->
+  <view class='categoryViewStyle'>
+    <view id='{{index}}' wx:key="{{index}}" wx:for="{{categoryData}}" class='categoryItemStyle' bindtap='itemClick'>
+      <image src='{{item.image}}' class='categoryItemImageStyle'></image>
+      <text class='categoryItemTitleStyle'>{{item.title}}</text>
+    </view>
+  </view>
+  <!-- 精选商家标题 -->
+  <view class='siftShopViewStyle'>
+    <image class='siftShopImageSylte' src='../../images/ShopCenter.png'></image>
+    <text class='siftShopTextStyle'>精选商家</text>
+    <view class='siftShopMoreViewStyle' bindtap='moreSiftShopClick'>
+      <text class='siftShopTextStyle'>更多 ></text>
+    </view>
+  </view>
+  <!-- 精选商家列表 -->
+  <view class='siftShopItemContainer'>
+    <view wx:key='{{item}}' wx:for='{{siftShipData}}' class='siftShopItemView'>
+      <image src='../../images/FreeGetVolume.png' class='siftShopImteImage'></image>
+      <text class='siftShopItemText'>asdhjkasdhasjkdh</text>
+    </view>
+  </view>
+  <!-- 推荐商家标题 -->
+  <view class='siftShopViewStyle'>
+    <image class='siftShopImageSylte' src='../../images/ShopCenter.png'></image>
+    <text class='siftShopTextStyle'>好卷推荐</text>
+    <view class='siftShopMoreViewStyle' bindtap='moreSiftShopClick'>
+      <text class='siftShopTextStyle'>更多 ></text>
+    </view>
+  </view>
+  <!-- 推荐商家列表 -->
+  <view class='shopListContainer'>
+    <view wx:for='{{shopListData}}' wx:key='{{index}}' id="{{index}}">
+      <template is='item1' data='{{item}}'></template> 
+    </view>
+  </view>
+  <!-- 上拉刷新 -->
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</view>

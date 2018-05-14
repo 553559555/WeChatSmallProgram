@@ -1,0 +1,50 @@
+.container{
+  background-color: #eee;
+  height: 100vh;
+  width: 100vw;
+}
+.userContainer{
+  height: 250rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.userImageStyle{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100rpx;
+}
+.userNameStyle{
+  margin-top: 20rpx;
+  font-size: 25rpx;
+}
+.listViewStyle{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100rpx;
+  margin-top: 2rpx;
+  position: relative;
+}
+.listTextStyle{
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}
+.listImageStyle{
+  margin-left: 10rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+.arrowImageStyle{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  right: 10rpx;
+}
+.userMoneyStyle{
+  font-size: 25rpx;
+  position: absolute;
+  right: 70rpx;
+}

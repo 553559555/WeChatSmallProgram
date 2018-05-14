@@ -1,0 +1,14 @@
+<view class='container'>
+  <view class='userContainer'>
+    <image class='userImageStyle' src='{{icon}}'></image>
+    <text class='userNameStyle'>会员昵称：{{name}}</text>
+  </view>
+  <view wx:for='{{listData}}' wx:key='{{index}}'>
+    <view class='listViewStyle'>
+      <image class='listImageStyle' src='{{item.icon}}'></image>
+      <text class='listTextStyle'>{{item.title}}</text>
+      <image class='arrowImageStyle' src='../../images/arrow.png'></image>
+      <text class='userMoneyStyle' wx:if="{{index == 0}}">0元</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,142 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: #eeeeee;
+}
+.searchView{
+  background-color: white;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchContainerView{
+  height: 80rpx;
+  width: 80vw;
+  border: 1px solid gray;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.searchTextStyle{
+  font-size: 30rpx;
+  padding-left: 10rpx;
+}
+.searchImageStyle{
+  height: 60rpx;
+  width: 60rpx;
+  padding-left: 10rpx;
+}
+.bannerStyle{
+  height: 180rpx;
+  width: 100vw;
+}
+.categoryViewStyle{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2vw 2vw 2vw 2vw;
+}
+.categoryItemStyle{
+  height: 150rpx;
+  width: 20vw;
+  margin: 2vw 2vw 2vw 2vw;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+.categoryItemImageStyle{
+  width: 100rpx;
+  height: 100rpx;
+}
+.categoryItemTitleStyle{
+  font-size: 30rpx;
+}
+.siftShopViewStyle{
+  height: 100rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siftShopImageSylte{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+.siftShopMoreViewStyle{
+  position: absolute;
+  right: 20rpx;
+}
+.siftShopTextStyle{
+  font-size: 30rpx;
+  color: gray;
+}
+.siftShopItemContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1vw 1vw 1vw 1vw; 
+}
+.siftShopItemView{
+  background-color: red;
+  width: 47vw;
+  height: 30vw;
+  margin: 1vw 1vw 1vw 1vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.siftShopImteImage{
+  width: 45vw;
+  height: 28vw;
+  background: yellow;
+}
+.siftShopItemText{
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+  right: 1vw;
+  background-color: rgba(200, 200, 200, 0.3);
+  width: 45vw;
+  text-align: center;
+  color: #999;
+  font-size: 35rpx;
+}
+.shopListContainer{
+  display: flex;
+  flex-direction: column;
+}
+.shopListItemStyle{
+  height: 300rpx;
+  background-color: salmon;
+  border: 1px solid black;
+}
+/* 下拉刷新样式 */
+.weui-loading {
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-animation: weuiLoading 1s steps(12, end) infinite;
+  animation: weuiLoading 1s steps(12, end) infinite;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+  background-size: 100%;
+}
+.weui-loadmore {
+  width: 65%;
+  margin: 1.5em auto;
+  line-height: 1.6em;
+  font-size: 14px;
+  text-align: center;
+}
+.weui-loadmore__tips {
+  display: inline-block;
+  vertical-align: middle;
+}
+@import "Item/item.wxss"
