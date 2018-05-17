@@ -1,0 +1,16 @@
+<import src='../FreeGetVolume/Item/item.wxml' />
+<view class='container'>
+
+  <view class='searchView'>
+    <view class='searchContainerView' bindtap='searchViewClick'>
+      <image  class='searchImageStyle' src='../../images/search.png'></image>
+      <input class='searchTextStyle' placeholder='请输入商家名称'></input>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class='shopListContainer' style='margin-top:50rpx;'>
+    <view wx:for='{{shopListData}}' wx:key='{{index}}' id="{{index}}">
+      <template is='item1' data='{{item}}'></template> 
+    </view>
+  </view>
+</view>

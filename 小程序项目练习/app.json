@@ -2,7 +2,8 @@
   "pages": [
     "page/FreeGetVolume/FreeGetVolume",
     "page/ShopCenter/ShopCenter",
-    "page/UserCenter/UserCenter"
+    "page/UserCenter/UserCenter",
+    "page/SearchPage/SearchPage"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

@@ -36,6 +36,12 @@ Page({
 
   searchViewClick: function() {
     console.log("跳转搜索页面")
+    wx.navigateTo({
+      url: '../SearchPage/SearchPage?title:123123',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
 
   itemClick: function(e) {
@@ -44,40 +50,6 @@ Page({
 
   moreSiftShopClick: function() {
     console.log("获取更多推荐商家")
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
   },
 
   /**
@@ -108,10 +80,4 @@ Page({
    
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
 })
