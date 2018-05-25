@@ -34,7 +34,7 @@
   </view>
   <!-- 精选商家列表 -->
   <view class='siftShopItemContainer'>
-    <view wx:key='{{item}}' wx:for='{{siftShipData}}' class='siftShopItemView'>
+    <view id='{{index}}' wx:key='{{item}}' wx:for='{{siftShipData}}' class='siftShopItemView' bindtap='moreShopItemClick'>
       <image src='../../images/FreeGetVolume.png' class='siftShopImteImage'></image>
       <text class='siftShopItemText'>asdhjkasdhasjkdh</text>
     </view>
@@ -43,13 +43,13 @@
   <view class='siftShopViewStyle'>
     <image class='siftShopImageSylte' src='../../images/ShopCenter.png'></image>
     <text class='siftShopTextStyle'>好卷推荐</text>
-    <view class='siftShopMoreViewStyle' bindtap='moreSiftShopClick'>
+    <view class='siftShopMoreViewStyle' bindtap='volumeCommendClick'>
       <text class='siftShopTextStyle'>更多 ></text>
     </view>
   </view>
   <!-- 推荐商家列表 -->
   <view class='shopListContainer'>
-    <view wx:for='{{shopListData}}' wx:key='{{index}}' id="{{index}}">
+    <view wx:for='{{shopListData}}' wx:key='{{index}}' id="{{index}}" bindtap='volumeCommendItemClick'>
       <template is='item1' data='{{item}}'></template> 
     </view>
   </view>

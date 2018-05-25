@@ -6,6 +6,10 @@
       <text class='shopPriceStyle'>100元</text>
       <text class='shopDescStyle'>汽车，美容，保养</text>
       <text class='shopDiscountStyle'>满减10元</text>
+      <view class='getVolumeStyle'>
+        <text style='font-size:25rpx;color:orange;margin-left:5rpx;margin-right:5rpx;'>立即领取</text>
+      </view>
+      <text class='distanceTextStyle'>1.7公里</text>
     </view>
   </view>
 </template>

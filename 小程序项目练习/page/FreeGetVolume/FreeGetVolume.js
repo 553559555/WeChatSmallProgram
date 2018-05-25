@@ -34,6 +34,9 @@ Page({
     isHideLoadMore:true
   },
 
+  /**
+   * 搜索按钮点击事件
+   */
   searchViewClick: function() {
     console.log("跳转搜索页面")
     wx.navigateTo({
@@ -44,12 +47,39 @@ Page({
     })
   },
 
+  /**
+   * 分类按钮点击事件
+   */
   itemClick: function(e) {
     console.log(e.currentTarget.id)
   },
 
+  /**
+   * 精选商家点击事件
+   */
   moreSiftShopClick: function() {
     console.log("获取更多推荐商家")
+  },
+
+  /**
+   * 精选商家item事件
+   */
+  moreShopItemClick: function(e) {
+    console.log(e.currentTarget.id)
+  },
+
+  /**
+   * 好卷推荐点击事件
+   */
+  volumeCommendClick: function() {
+    console.log("好卷推荐")
+  },
+
+  /**
+   * 好卷推荐item点击事件
+   */
+  volumeCommendItemClick: function(e) {
+    console.log(e.currentTarget.id)
   },
 
   /**

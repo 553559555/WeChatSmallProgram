@@ -24,4 +24,24 @@ Page({
     })
   },
 
+  itemClick: function(e) {
+    switch (e.currentTarget.id) {
+      case '0':
+        wx.navigateTo({
+          url: '../MyProperty/MyProperty',
+        })
+        break;
+      case '1':
+        wx.navigateTo({
+          url: '../MyVolume/MyVolume',
+        })
+        break;
+      case '2':
+        wx.navigateTo({
+          url: '../MyOrder/MyOrder',
+        })
+        break;
+    }
+  }
+
 })

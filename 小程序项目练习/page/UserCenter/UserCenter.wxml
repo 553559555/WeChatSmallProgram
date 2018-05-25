@@ -3,7 +3,7 @@
     <image class='userImageStyle' src='{{icon}}'></image>
     <text class='userNameStyle'>会员昵称：{{name}}</text>
   </view>
-  <view wx:for='{{listData}}' wx:key='{{index}}'>
+  <view wx:for='{{listData}}' wx:key='{{index}}' id='{{index}}' bindtap='itemClick'>
     <view class='listViewStyle'>
       <image class='listImageStyle' src='{{item.icon}}'></image>
       <text class='listTextStyle'>{{item.title}}</text>

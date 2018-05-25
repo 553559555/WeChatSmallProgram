@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='userMoneyContainer'>
+    <text class='moenyDescTextStyle'>账户余额</text>
+    <text class='moenyTextStyle'>￥ 0</text>
+    <text class='moenyDescTextStyle'>累计收益:0元</text>
+    <view class='putMoneyViewStyle'>
+      <text style='font-size:25rpx;color:white;'>提现</text>
+    </view>
+    <text class='promptTextStyle'>温馨提示：您还没达到最低提现金额100元</text>
+  </view>
+  <view wx:for='{{listData}}' wx:key='{{index}}' id='{{index}}' bindtap='itemClick'>
+    <view class='listViewStyle'>
+      <image class='listImageStyle' src='{{item.icon}}'></image>
+      <text class='listTextStyle'>{{item.title}}</text>
+      <image class='arrowImageStyle' src='../../images/arrow.png'></image>
+      <text class='userMoneyStyle' wx:if="{{index == 0}}">未绑定</text>
+    </view>
+  </view>
+</view>

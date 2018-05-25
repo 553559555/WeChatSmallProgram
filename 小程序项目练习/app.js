@@ -5,7 +5,9 @@ App({
     userIcon: null,
     userGender: null,
     userCity: null,
-    userNationality: null 
+    userNationality: null,
+    screenHeight: null,
+    screenWidth: null,
   },
 
   /**
@@ -13,21 +15,13 @@ App({
    */
   onLaunch: function () {
     var self = this
-    // wx.getUserInfo({
-    //   success:function (res) {
-    //     if (res.userInfo) {
-    //       console.log(res.userInfo.nickName)
-    //       self.globalData.userName = res.userInfo.nickName
-    //       self.globalData.userIcon = res.userInfo.avatarUrl
-    //       self.globalData.userGender = res.userInfo.gender
-    //       self.globalData.userCity = res.userInfo.city
-    //       self.globalData.userNationality = res.userInfo.country
-    //     }
-    //   },
-    //   fail:function (err) {
-    //     console.log(err)
-    //   }
-    // })
+    wx.getSystemInfo({
+      success: function (res) {
+        console.log(res)
+        self.globalData.screenHeight = res.windowHeight
+        self.globalData.screenWidth = res.windowWidth
+      },
+    })
   },
 
   /**

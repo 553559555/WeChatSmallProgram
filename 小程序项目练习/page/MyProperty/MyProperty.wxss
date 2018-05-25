@@ -1,0 +1,65 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: #eee;
+}
+.userMoneyContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.moenyTextStyle{
+  font-size: 50rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.moenyDescTextStyle{
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.promptTextStyle{
+  font-size: 20rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  color: #aaa;
+  margin-bottom: 30rpx;
+}
+.putMoneyViewStyle{
+  height: 60rpx;
+  width: 60vw;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  margin-top: 20rpx;
+}
+.listViewStyle{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100rpx;
+  margin-top: 2rpx;
+  position: relative;
+}
+.listTextStyle{
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}
+.listImageStyle{
+  margin-left: 10rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+.arrowImageStyle{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  right: 10rpx;
+}
+.userMoneyStyle{
+  font-size: 25rpx;
+  position: absolute;
+  right: 70rpx;
+}

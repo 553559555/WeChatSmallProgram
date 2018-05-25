@@ -1,0 +1,24 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  background-color: #eee;
+}
+.titleViewStyle{
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.titleItemStyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 76rpx;
+  width: 33.333vw;
+}
+.lineViewStyle{
+  background-color: red;
+  height: 4rpx;
+  width: 33.333vw;
+  position: absolute;
+}

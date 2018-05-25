@@ -1,9 +1,15 @@
 {
   "pages": [
-    "page/FreeGetVolume/FreeGetVolume",
+    "page/OrderList/OrderList",
+    
     "page/ShopCenter/ShopCenter",
     "page/UserCenter/UserCenter",
-    "page/SearchPage/SearchPage"
+    "page/SearchPage/SearchPage",
+    "page/MyProperty/MyProperty",
+    "page/MyOrder/MyOrder",
+    "page/MyVolume/MyVolume",
+    
+    "page/FreeGetVolume/FreeGetVolume"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -15,21 +21,25 @@
   },
   "tabBar": {
     "selectedColor": "blue",
-    "list": [{
-      "pagePath": "page/FreeGetVolume/FreeGetVolume",
-      "text": "免费领取",
-      "iconPath": "images/FreeGetVolume.png",
-      "selectedIconPath": "images/FreeGetVolume1.png"
-    },{
-      "pagePath": "page/ShopCenter/ShopCenter",
-      "text": "商户中心",
-      "iconPath": "images/ShopCenter.png",
-      "selectedIconPath": "images/ShopCenter1.png"
-    },{
-      "pagePath": "page/UserCenter/UserCenter",
-      "text": "个人中心",
-      "iconPath": "images/UserCenter.png",
-      "selectedIconPath": "images/UserCenter1.png"
-    }]
+    "list": [
+      {
+        "pagePath": "page/OrderList/OrderList",
+        "text": "免费领取",
+        "iconPath": "images/FreeGetVolume.png",
+        "selectedIconPath": "images/FreeGetVolume1.png"
+      },
+      {
+        "pagePath": "page/ShopCenter/ShopCenter",
+        "text": "商户中心",
+        "iconPath": "images/ShopCenter.png",
+        "selectedIconPath": "images/ShopCenter1.png"
+      },
+      {
+        "pagePath": "page/UserCenter/UserCenter",
+        "text": "个人中心",
+        "iconPath": "images/UserCenter.png",
+        "selectedIconPath": "images/UserCenter1.png"
+      }
+    ]
   }
 }

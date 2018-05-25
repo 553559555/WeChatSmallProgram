@@ -12,11 +12,11 @@
     <view class='inputViewContainerStyle'>
       <view class='inputContainerViewStyle'>
         <text class='inputTextDescrice'>手机号</text>
-        <input class='inputView' placeholder='请输入手机号码'></input>
+        <input class='inputView' type='number' placeholder='请输入手机号码' bindinput='phoneTextInput'></input>
       </view>
       <view class='inputContainerViewStyle' hidden='{{userLoginType}}'>
         <text class='inputTextDescrice'>密　码</text>
-        <input class='inputView' placeholder='请输入密码'></input>
+        <input class='inputView' password='true' placeholder='请输入密码' bindinput='passwordTextInput'></input>
       </view>
       <view class='inputContainerViewStyle' hidden='{{!userLoginType}}'>
         <input class='getCodeInputStyle' placeholder='请输入验证码'></input>
@@ -31,17 +31,17 @@
       </radio-group>
     </view>
     <view class='radioContainerStyle' hidden='{{isShopType}}'>
-      <radio-group>
+      <radio-group bindchange='organizationType'>
         <label style='font-size:30rpx;margin-left:50rpx;' wx:for='{{shopLoginStyleArray}}' wx:key='{{index}}'>
           <radio value='{{item.name}}' checked='{{item.checked}}' />{{item.name}}
         </label>
       </radio-group>
     </view>
     <view class='loginButtonContainer'>
-      <view class='loginButtonStyle' style='background-color:blue;'>
+      <view class='loginButtonStyle' style='background-color:blue;' bindtap='signInClick'>
         <text style='font-size:30rpx;color:white;'>登录</text>
       </view>
-      <view class='loginButtonStyle' style='background-color:grey;'>
+      <view class='loginButtonStyle' style='background-color:grey;' bindtap='signUpClick'>
         <text style='font-size:30rpx;'>在线申请</text>
       </view>
     </view>

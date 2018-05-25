@@ -1,0 +1,8 @@
+<view class='container'>
+  <view class='titleViewStyle'>
+    <view id='{{index}}' wx:for='{{titleArray}}' wx:key='{{index}}' class='titleItemStyle' bindtap='itemClick'>
+      <text style='color:{{index == currentSelectorItem ? "red" : "black"}};'>{{item.title}}</text>
+    </view>
+  </view>
+  <view class='lineViewStyle' style='left:{{lineViewLeft}}px'></view>
+</view>
